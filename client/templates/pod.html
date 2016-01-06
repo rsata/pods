@@ -1,0 +1,23 @@
+<template name="pod">
+  
+  <div class="row">
+    <div class="col-xs-8 col-xs-offset-2">
+      <h1>{{GroupName}}</h1>
+      <h4>Code: {{groupID}}</h4>
+      <h4>Owe: {{owe}}</h4>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-4 col-xs-offset-2">
+      <form id="addMoney">
+        <div class="form-group">
+          <label>Amount</label>
+          <input class="form-control" name="money">
+          <button class="btn btn-primary buffer">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  
+
+</template>

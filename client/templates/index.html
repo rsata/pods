@@ -1,0 +1,36 @@
+<template name="index">
+  
+
+  <div class="container-fluid">
+
+{{#if currentUser}}
+
+  <button id="logout" class="btn btn-primary buffer">Logout</button>
+
+  <div class="row">
+    <div class="col-xs-12">
+      <ul>
+        {{#each group}}
+          {{>group_id}}
+        {{/each}}
+        <li id="newgroup" class="list">
+          <ul class="group text-center">
+            <li class="sublist sublistname">+</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  {{>pod}}
+
+{{else}}
+
+<a href="/login" class="login"><h1>LOGIN</h1></a>
+
+{{/if}}
+
+
+  </div>
+
+</template>
